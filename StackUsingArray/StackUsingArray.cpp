@@ -48,7 +48,7 @@ public :
             cout << "\nStack is empty." << endl;
         }
         else {
-            for (int tmp = 0; tmp <= top; tmp++) {
+            for (int tmp = top; tmp >= 0; tmp--) {
                 cout << stack_array[tmp] << endl;
             }
         }
@@ -76,6 +76,17 @@ int main()
             s.push(element);
             break;
         }
+        case '2' :
+            if (s.empty()) {
+                cout << "\nStack is empty." << endl;
+                break;
+            }
+            s.pop();
+            break;
+        case '3' :
+            s.display();
+            break;
+            case ''
         }
 
     }
