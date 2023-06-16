@@ -36,19 +36,20 @@ public :
 
         cout << "\nThe popped element is : " << stack_array[top] << endl;    //Step 2
 
-        //method for check if data is empty
-        bool empty() {
-            return (top == -1);
-        }
+    }
 
-        void display() {
-            if (empty()) {
-                cout << "\nStack is empty." << endl;
-            }
-            else {
-                for (int tmp = 0; tmp <= top; tmp++) {
-                    cout << stack_array[tmp] << endl;
-                }
+    //method for check if data is empty
+    bool empty() {
+        return (top == -1);
+    }
+
+    void display() {
+        if (empty()) {
+            cout << "\nStack is empty." << endl;
+        }
+        else {
+            for (int tmp = 0; tmp <= top; tmp++) {
+                cout << stack_array[tmp] << endl;
             }
         }
     }
