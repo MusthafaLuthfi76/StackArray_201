@@ -56,6 +56,27 @@ public :
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    StackArray s;
+    char ch;
+    while (true) {
+        cout << endl;
+        cout << "\n***Stack Menu***\n";
+        cout << "1. Push\n";
+        cout << "2. Pop\n";
+        cout << "3. Display\n";
+        cout << "4. Exit\n";
+        cout << "\nEnter your Choice : ";
+        cin >> ch;
+        switch (ch) {
+        case '1': {
+            cout << "\nEnter an Element : ";
+            int element;
+            cin >> element;
+            s.push(element);
+            break;
+        }
+        }
+
+    }
 }
 
